@@ -1,0 +1,121 @@
+{
+  "personal": {
+    "name": "Yatin Batra",
+    "title": "Principal Software Engineer",
+    "tagline": "Building production AI systems from architecture to 1000+ users. Engineer specializing in RAG, agentic workflows, and cloud-native platforms.",
+    "stats": [
+      "13+ years",
+      "1000+ users",
+      "AI/GenAI products",
+      "Azure AI • GCP • TOGAF Certified"
+    ]
+  },
+  "contact": {
+    "email": "yatinbatra5@gmail.com",
+    "phone": "+91 98105 14127",
+    "linkedin": "https://www.linkedin.com/in/yatin-batra",
+    "github": ""
+  },
+  "resume": {
+    "show": false,
+    "url": ""
+  },
+  "featuredProjects": [
+    {
+      "title": "AiMeE - AI-Powered Aircraft Maintenance",
+      "problem": "During aircraft maintenance, 1000+ Air India engineers spent 30+ minutes searching through 2,000+ page A320 technical manuals (AMM/TSM) for critical procedures. In aviation, delayed maintenance can ground flights costing $50K+ per hour—fast, accurate information is mission-critical.",
+      "approach": "Built a production RAG (Retrieval-Augmented Generation) application using Python/FastAPI for AI services and React for the UI. Chose Azure OpenAI for reliability and aviation compliance over self-hosted models, trading cost for zero-downtime SLA. Integrated Azure AI Search to process maintenance queries. Collaborated with Data Science teams on optimized document chunking, metadata enrichment, and indexing strategies. Created deep links and contextual imagery to improve discoverability and user experience.",
+      "results": [
+        "1000+ maintenance engineers using the platform",
+        "80% user satisfaction achieved",
+        "35% improvement in retrieval accuracy through optimized chunking and metadata enrichment",
+        "Integrated with Skywise aviation APIs for real-time aircraft data"
+      ],
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "React",
+        "Azure OpenAI",
+        "Azure AI Search",
+        "Skywise APIs"
+      ]
+    },
+    {
+      "title": "Payroll Extract Service - Cloud-Native Microservices",
+      "problem": "UKG needed a scalable payroll processing system to handle enterprise workforces with thousands of employees. The existing system lacked cloud-native architecture and had high operational costs. Development teams were spending $15K/month on cloud resources for local testing alone—an unsustainable cost for rapid iteration.",
+      "approach": "Developed Payroll Extract Service from scratch using Spring Boot with Google Cloud technologies (Cloud Run, Cloud Function, BigQuery, Firestore). Designed RESTful microservices with end-to-end deployment automation. Built Google Cloud Emulators for local development, eliminating cloud costs during development cycles. Implemented CI Jenkins pipelines with code quality checks, coverage metrics, and vulnerability scanning.",
+      "results": [
+        "Serverless deployment processing payroll for large enterprise workforces",
+        "Reduced cloud development costs through Google Cloud emulator-based development",
+        "Zero-downtime releases with automated CI/CD pipelines",
+        "Recognition for innovative cost-saving measures"
+      ],
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "Google Cloud Run",
+        "BigQuery",
+        "Firestore",
+        "Jenkins"
+      ]
+    }
+  ],
+  "otherProjects": [
+    {
+      "title": "AiMeE.invoke - Agentic Workflow System",
+      "description": "Agentic AI system automating aircraft maintenance workflows by orchestrating data from ECAM alerts, Skywise APIs, and AMOS. Implements human-in-the-loop safety controls for critical maintenance decisions—zero autonomous approvals for safety operations.",
+      "techStack": [
+        "Java",
+        "Spring Boot",
+        "Azure OpenAI",
+        "RAG"
+      ]
+    },
+    {
+      "title": "UKG Pro Timekeeping Platform",
+      "description": "Led team of 5 engineers modernizing UKG's absence management platform (Spring 16/Java 17 migration). Improved system stability and accelerated deployment velocity from monthly to weekly releases, enabling faster feature delivery to enterprise customers.",
+      "techStack": [
+        "Spring Boot",
+        "Angular",
+        "React",
+        "Microservices"
+      ]
+    },
+    {
+      "title": "ASSA ABLOY Microservices",
+      "description": "Designed RESTful microservices for enterprise IAM platform serving 100K+ users. Led AWS infrastructure management, implemented CI/CD pipelines, and mentored 3 junior engineers on cloud-native architecture patterns.",
+      "techStack": [
+        "AWS",
+        "Microservices",
+        "Angular",
+        "Jenkins"
+      ]
+    },
+    {
+      "title": "B2E Digital Genie Chatbot",
+      "description": "Enhanced enterprise chatbot by addressing architectural gaps, resolving 50+ backlog defects, and improving response latency for Air India employees.",
+      "techStack": [
+        "Python",
+        "FastAPI",
+        "Angular"
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "title": "Agentic Architecture",
+      "description": "Comprehensive documentation on designing and implementing agentic AI systems. Covers workflow orchestration, human-in-the-loop patterns, and production deployment strategies.",
+      "url": "https://beena-yatin-kanyal.github.io/agentic-documentation/"
+    },
+    {
+      "title": "Choreograph Databases with Microservices",
+      "description": "Deep dive into microservices choreography patterns, event-driven architecture, and database design strategies for distributed systems at scale.",
+      "url": "https://www.nagarro.com/en/blog/choreograph-databases-with-microservices"
+    },
+    {
+      "title": "More Technical Articles",
+      "description": "Additional articles on software architecture, microservices, cloud-native systems, and engineering best practices.",
+      "url": "https://blogs.stackedmind.com/"
+    }
+  ]
+}

@@ -36,8 +36,10 @@
         "Python",
         "FastAPI",
         "React",
-        "Azure OpenAI",
+        "Azure AI Foundry",
         "Azure AI Search",
+        "Azure CosmosDB",
+        "Azure Blob Storage",
         "Skywise APIs"
       ]
     },
@@ -56,6 +58,7 @@
         "Java",
         "Spring Boot",
         "Google Cloud Run",
+        "Google Cloud Function",
         "BigQuery",
         "Firestore",
         "Jenkins"
@@ -67,10 +70,11 @@
       "title": "AiMeE.invoke - Agentic Workflow System",
       "description": "Agentic AI system automating aircraft maintenance workflows by orchestrating data from ECAM alerts, Skywise APIs, and AMOS. Implements human-in-the-loop safety controls for critical maintenance decisions—zero autonomous approvals for safety operations.",
       "techStack": [
-        "Java",
-        "Spring Boot",
-        "Azure OpenAI",
-        "RAG"
+        "Python",
+        "FastAPI",
+        "React",
+        "MCP",
+        "Skywise APIs"
       ]
     },
     {
@@ -99,7 +103,9 @@
       "techStack": [
         "Python",
         "FastAPI",
-        "Angular"
+        "Angular",
+        "Azure OpenAI",
+        "RAG"
       ]
     }
   ],

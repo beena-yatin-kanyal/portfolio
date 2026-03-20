@@ -158,7 +158,7 @@ body {
 .hero {
     max-width: 800px;
     margin: 0 auto;
-    padding: var(--space-xxxlarge) var(--space-large) var(--space-xxlarge);
+    padding: var(--space-xxlarge) var(--space-large) var(--space-xlarge);
     text-align: center;
 }
 
@@ -166,7 +166,7 @@ body {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
 }
 
 .hero-title {
@@ -178,7 +178,7 @@ body {
 .hero-tagline {
     font-size: 20px;
     color: var(--text-primary);
-    margin-bottom: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 .hero-stats {
@@ -186,7 +186,7 @@ body {
     justify-content: center;
     gap: var(--space-medium);
     flex-wrap: wrap;
-    margin-bottom: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 .stat-badge {
@@ -229,29 +229,29 @@ body {
 .section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-xxxlarge) var(--space-large);
+    padding: var(--space-xxlarge) var(--space-large);
 }
 
 .section-heading {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.01em;
-    margin-bottom: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 .subsection-heading {
     font-size: 20px;
     font-weight: 500;
-    margin-top: var(--space-xxlarge);
-    margin-bottom: var(--space-xlarge);
+    margin-top: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 /* Project Cards */
 .project-card {
     border: 1px solid var(--border-standard);
     border-radius: 4px;
-    padding: var(--space-xlarge);
-    margin-bottom: var(--space-xlarge);
+    padding: var(--space-large);
+    margin-bottom: var(--space-large);
     transition: all 0.2s ease;
 }
 
@@ -265,15 +265,15 @@ body {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.01em;
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-large);
 }
 
 /* Architecture Highlight */
 .architecture-highlight {
     background: var(--bg-surface);
     border-left: 3px solid var(--accent);
-    padding: var(--space-large);
-    margin-bottom: var(--space-xlarge);
+    padding: var(--space-medium);
+    margin-bottom: var(--space-large);
     border-radius: 4px;
 }
 
@@ -293,17 +293,17 @@ body {
 }
 
 .project-section {
-    margin-bottom: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 .project-section:last-of-type {
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
 }
 
 .project-subheading {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
     color: var(--text-secondary);
 }
 
@@ -318,7 +318,7 @@ body {
 
 .results-list li {
     padding-left: var(--space-medium);
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
     position: relative;
 }
 
@@ -369,13 +369,13 @@ body {
 .brief-title {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
 }
 
 .brief-desc {
     font-size: 15px;
     color: var(--text-secondary);
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
 }
 
 /* Skills Section */
@@ -406,19 +406,19 @@ body {
 
 /* Writing Section */
 .writing-item {
-    margin-bottom: var(--space-xlarge);
+    margin-bottom: var(--space-large);
 }
 
 .writing-title {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
 }
 
 .writing-desc {
     font-size: 15px;
     color: var(--text-secondary);
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-small);
 }
 
 .writing-link {
@@ -477,7 +477,7 @@ body {
 .footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-xxlarge) var(--space-large);
+    padding: var(--space-xlarge) var(--space-large);
     text-align: center;
     border-top: 1px solid var(--border-standard);
 }
@@ -498,7 +498,7 @@ body {
     }
 
     .hero {
-        padding: var(--space-xxlarge) var(--space-medium) var(--space-xlarge);
+        padding: var(--space-xlarge) var(--space-medium) var(--space-large);
     }
 
     .hero-name {

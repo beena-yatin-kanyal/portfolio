@@ -26,6 +26,7 @@ function renderPortfolio() {
     renderFeaturedProjects();
     renderOtherProjects();
     renderWriting();
+    renderSkills();
     renderContact();
     renderFooter();
 
@@ -60,6 +61,13 @@ function renderFeaturedProjects() {
         .map(project => `
             <article class="project-card">
                 <h3 class="project-title">${project.title}</h3>
+
+                ${project.architectureHighlight ? `
+                <div class="architecture-highlight">
+                    <span class="architecture-label">Architecture Decision</span>
+                    <p class="architecture-text">${project.architectureHighlight}</p>
+                </div>
+                ` : ''}
 
                 <div class="project-section">
                     <h4 class="project-subheading">The Problem</h4>
@@ -99,6 +107,22 @@ function renderOtherProjects() {
                     ${project.techStack.map(tech => `<span class="tech-badge">${tech}</span>`).join('')}
                 </div>
             </article>
+        `)
+        .join('');
+}
+
+// Render skills section
+function renderSkills() {
+    const container = document.getElementById('skills-container');
+
+    container.innerHTML = config.skills.categories
+        .map(category => `
+            <div class="skill-category">
+                <h3 class="skill-category-name">${category.name}</h3>
+                <div class="skill-items">
+                    ${category.items.map(skill => `<span class="tech-badge">${skill}</span>`).join('')}
+                </div>
+            </div>
         `)
         .join('');
 }

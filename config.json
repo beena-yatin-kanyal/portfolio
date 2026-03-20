@@ -1,12 +1,12 @@
 {
   "personal": {
-    "name": "Yatin Batra",
+    "name": "Yatin B.",
     "title": "Principal Software Engineer",
     "tagline": "Building production AI systems from architecture to 1000+ users. Engineer specializing in RAG, agentic workflows, and cloud-native platforms.",
     "stats": [
       "13+ years",
       "1000+ users",
-      "AI/GenAI products",
+      "Production AI & Cloud-Native Systems",
       "Azure AI • GCP • TOGAF Certified"
     ]
   },
@@ -23,6 +23,7 @@
   "featuredProjects": [
     {
       "title": "AiMeE - AI-Powered Aircraft Maintenance",
+      "architectureHighlight": "Chose managed Azure OpenAI over self-hosted models—trading marginal cost for guaranteed uptime in mission-critical aviation context where system downtime grounds aircraft at $50K+/hour.",
       "problem": "During aircraft maintenance, 1000+ Air India engineers spent 30+ minutes searching through 2,000+ page A320 technical manuals (AMM/TSM) for critical procedures. In aviation, delayed maintenance can ground flights costing $50K+ per hour—fast, accurate information is mission-critical.",
       "approach": "Built a production RAG (Retrieval-Augmented Generation) application using Python/FastAPI for AI services and React for the UI. Chose Azure OpenAI for reliability and aviation compliance over self-hosted models, trading cost for zero-downtime SLA. Integrated Azure AI Search to process maintenance queries. Collaborated with Data Science teams on optimized document chunking, metadata enrichment, and indexing strategies. Created deep links and contextual imagery to improve discoverability and user experience.",
       "results": [
@@ -42,6 +43,7 @@
     },
     {
       "title": "Payroll Extract Service - Cloud-Native Microservices",
+      "architectureHighlight": "Built Google Cloud Emulators for local development—eliminating $15K/month in cloud testing costs while maintaining production parity for rapid iteration cycles.",
       "problem": "UKG needed a scalable payroll processing system to handle enterprise workforces with thousands of employees. The existing system lacked cloud-native architecture and had high operational costs. Development teams were spending $15K/month on cloud resources for local testing alone—an unsustainable cost for rapid iteration.",
       "approach": "Developed Payroll Extract Service from scratch using Spring Boot with Google Cloud technologies (Cloud Run, Cloud Function, BigQuery, Firestore). Designed RESTful microservices with end-to-end deployment automation. Built Google Cloud Emulators for local development, eliminating cloud costs during development cycles. Implemented CI Jenkins pipelines with code quality checks, coverage metrics, and vulnerability scanning.",
       "results": [
@@ -117,5 +119,108 @@
       "description": "Additional articles on software architecture, microservices, cloud-native systems, and engineering best practices.",
       "url": "https://blogs.stackedmind.com/"
     }
-  ]
+  ],
+  "skills": {
+    "categories": [
+      {
+        "name": "Languages & Frameworks",
+        "items": [
+          "Java 8/17",
+          "Python",
+          "FastAPI",
+          "React",
+          "Angular",
+          "Node.js",
+          "Express.js",
+          "TypeScript",
+          "JavaScript",
+          "J2EE"
+        ]
+      },
+      {
+        "name": "AI & Data",
+        "items": [
+          "Azure OpenAI",
+          "Claude",
+          "RAG",
+          "Azure AI Search",
+          "Azure AI Foundry",
+          "PySpark"
+        ]
+      },
+      {
+        "name": "Cloud & Infrastructure",
+        "items": [
+          "AWS",
+          "Azure",
+          "Google Cloud (GCP)",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
+        ]
+      },
+      {
+        "name": "Microservices & APIs",
+        "items": [
+          "Spring Boot",
+          "Dropwizard",
+          "Spring JPA",
+          "Spring Security",
+          "Hibernate",
+          "RabbitMQ",
+          "REST",
+          "GraphQL",
+          "OpenAPI/Swagger",
+          "Skywise APIs"
+        ]
+      },
+      {
+        "name": "Databases",
+        "items": [
+          "PostgreSQL",
+          "Azure Cosmos DB",
+          "MongoDB"
+        ]
+      },
+      {
+        "name": "Aviation Platforms",
+        "items": [
+          "Skywise (Airbus Aviation Data Platform)"
+        ]
+      },
+      {
+        "name": "DevSecOps",
+        "items": [
+          "Jenkins",
+          "Azure DevOps",
+          "GitHub Actions",
+          "SonarQube",
+          "CodeQL",
+          "BlackDuck",
+          "Grafana",
+          "Splunk",
+          "Datadog"
+        ]
+      },
+      {
+        "name": "Development Tools",
+        "items": [
+          "IntelliJ",
+          "Eclipse",
+          "Git",
+          "Maven",
+          "Gradle",
+          "Postman",
+          "JIRA"
+        ]
+      },
+      {
+        "name": "Testing",
+        "items": [
+          "Rest Assured",
+          "JUnit"
+        ]
+      }
+    ]
+  }
 }

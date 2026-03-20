@@ -23,7 +23,9 @@
     --space-small: 8px;
     --space-medium: 16px;
     --space-large: 24px;
-    --space-xlarge: 48px;
+    --space-xlarge: 32px;
+    --space-xxlarge: 48px;
+    --space-xxxlarge: 64px;
 }
 
 /* Reset and Base */
@@ -92,11 +94,11 @@ body {
 .nav-toggle {
     display: none;
     flex-direction: column;
-    gap: 4px;
+    gap: var(--space-micro);
     background: none;
     border: none;
     cursor: pointer;
-    padding: 8px;
+    padding: var(--space-small);
 }
 
 .nav-toggle span {
@@ -156,7 +158,7 @@ body {
 .hero {
     max-width: 800px;
     margin: 0 auto;
-    padding: 80px var(--space-large) var(--space-xlarge);
+    padding: var(--space-xxxlarge) var(--space-large) var(--space-xxlarge);
     text-align: center;
 }
 
@@ -164,19 +166,19 @@ body {
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -0.02em;
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-large);
 }
 
 .hero-title {
     font-size: 20px;
     color: var(--text-secondary);
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
 }
 
 .hero-tagline {
     font-size: 20px;
     color: var(--text-primary);
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-xlarge);
 }
 
 .hero-stats {
@@ -184,18 +186,24 @@ body {
     justify-content: center;
     gap: var(--space-medium);
     flex-wrap: wrap;
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-xlarge);
 }
 
 .stat-badge {
     display: inline-block;
     padding: var(--space-small) var(--space-medium);
+    background: var(--bg-surface);
     border: 1px solid var(--border-standard);
     border-radius: 4px;
     font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
     font-size: 13px;
     letter-spacing: -0.01em;
     color: var(--text-primary);
+    transition: border-color 0.2s ease;
+}
+
+.stat-badge:hover {
+    border-color: var(--border-emphasis);
 }
 
 .hero-cta {
@@ -209,6 +217,7 @@ body {
     font-size: 16px;
     color: var(--accent);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .cta-link:hover {
@@ -220,50 +229,81 @@ body {
 .section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-xlarge) var(--space-large);
+    padding: var(--space-xxxlarge) var(--space-large);
 }
 
 .section-heading {
     font-size: 24px;
     font-weight: 500;
     letter-spacing: -0.01em;
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-xlarge);
 }
 
 .subsection-heading {
     font-size: 20px;
     font-weight: 500;
-    margin-top: var(--space-xlarge);
-    margin-bottom: var(--space-large);
+    margin-top: var(--space-xxlarge);
+    margin-bottom: var(--space-xlarge);
 }
 
 /* Project Cards */
 .project-card {
     border: 1px solid var(--border-standard);
     border-radius: 4px;
-    padding: var(--space-large);
-    margin-bottom: var(--space-large);
+    padding: var(--space-xlarge);
+    margin-bottom: var(--space-xlarge);
+    transition: all 0.2s ease;
+}
+
+.project-card:hover {
+    border-color: var(--border-emphasis);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
 }
 
 .project-title {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: -0.01em;
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-medium);
+}
+
+/* Architecture Highlight */
+.architecture-highlight {
+    background: var(--bg-surface);
+    border-left: 3px solid var(--accent);
+    padding: var(--space-large);
+    margin-bottom: var(--space-xlarge);
+    border-radius: 4px;
+}
+
+.architecture-label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-small);
+}
+
+.architecture-text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--text-primary);
+    margin: 0;
 }
 
 .project-section {
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-xlarge);
 }
 
 .project-section:last-of-type {
-    margin-bottom: var(--space-medium);
+    margin-bottom: var(--space-large);
 }
 
 .project-subheading {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-medium);
     color: var(--text-secondary);
 }
 
@@ -278,7 +318,7 @@ body {
 
 .results-list li {
     padding-left: var(--space-medium);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-medium);
     position: relative;
 }
 
@@ -316,42 +356,76 @@ body {
 .brief-card {
     border: 1px solid var(--border-standard);
     border-radius: 4px;
-    padding: 24px;
+    padding: var(--space-large);
+    transition: all 0.2s ease;
+}
+
+.brief-card:hover {
+    border-color: var(--border-emphasis);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transform: translateY(-1px);
 }
 
 .brief-title {
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-medium);
 }
 
 .brief-desc {
     font-size: 15px;
     color: var(--text-secondary);
+    margin-bottom: var(--space-large);
+}
+
+/* Skills Section */
+#skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-large);
+}
+
+.skill-category {
+    border: 1px solid var(--border-standard);
+    border-radius: 4px;
+    padding: var(--space-large);
+}
+
+.skill-category-name {
+    font-size: 16px;
+    font-weight: 500;
     margin-bottom: var(--space-medium);
+    color: var(--text-secondary);
+}
+
+.skill-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-small);
 }
 
 /* Writing Section */
 .writing-item {
-    margin-bottom: var(--space-large);
+    margin-bottom: var(--space-xlarge);
 }
 
 .writing-title {
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-medium);
 }
 
 .writing-desc {
     font-size: 15px;
     color: var(--text-secondary);
-    margin-bottom: var(--space-small);
+    margin-bottom: var(--space-medium);
 }
 
 .writing-link {
     font-size: 15px;
     color: var(--accent);
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
 .writing-link:hover {
@@ -391,7 +465,7 @@ body {
 .reveal-text {
     font-size: 14px;
     color: var(--text-tertiary);
-    margin-left: 4px;
+    margin-left: var(--space-micro);
     text-decoration: none;
 }
 
@@ -403,7 +477,7 @@ body {
 .footer {
     max-width: 1200px;
     margin: 0 auto;
-    padding: var(--space-large);
+    padding: var(--space-xxlarge) var(--space-large);
     text-align: center;
     border-top: 1px solid var(--border-standard);
 }
@@ -424,7 +498,7 @@ body {
     }
 
     .hero {
-        padding: 70px var(--space-medium) var(--space-large);
+        padding: var(--space-xxlarge) var(--space-medium) var(--space-xlarge);
     }
 
     .hero-name {
@@ -446,6 +520,10 @@ body {
     }
 
     .brief-projects {
+        grid-template-columns: 1fr;
+    }
+
+    #skills-container {
         grid-template-columns: 1fr;
     }
 
